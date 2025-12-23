@@ -1,16 +1,17 @@
 matchtable = {
-    "f1": "formula-1-radio-notification.mp3",
-    "fnaf2": "fnaf-2-hallway-ambience.mp3",
-    "ding": "ding-sound-effect_2.mp3",
-    "raar": "raaar_FerSY7o.mp3",
-    "bluetooth": "the-bluetooth-device-is-ready-to-pair.mp3"
+    "1": "1.mp3",
+    "2": "2.mp3",
+    "3": "3.mp3",
+    "4": "4.mp3",
+    "5": "5.mp3"
 }
 
 signtable = {
-    "!": matchtable["f1"],
-    "?": matchtable["ding"],
-    "-": matchtable["raar"],
-    "+": matchtable["bluetooth"],
+    "!": matchtable["1"],
+    "?": matchtable["2"],
+    "-": matchtable["3"],
+    "+": matchtable["4"],
+    ":": matchtable["5"],
 }
 
 presettable = {
