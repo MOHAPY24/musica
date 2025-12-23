@@ -2,9 +2,11 @@ from utils import play, background
 from tables import *
 import time
 
-command = "&+!&?;0: "
+volume = 100
+command = "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$&+!&?;0: "
 skip_wait = False
 preset = 0
+
 if __name__ == "__main__":
     for i in command:
         if i == "":
@@ -24,9 +26,14 @@ if __name__ == "__main__":
             continue
         elif command[command.index(i)-1] == ';':
             continue
-            
-        
+        elif i == '$':
+            volume -= 1
+            continue
+        elif i == '/':
+            volume += 1
+            continue
+        print(volume)
         sound_path = f"media/{presettable[preset]}{signtable[i]}"
-        play(sound_path, wait=not skip_wait)
+        play(sound_path, wait=not skip_wait, volume=volume)
         skip_wait = False
 
