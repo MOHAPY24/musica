@@ -2,7 +2,7 @@ from utils import play, background
 from tables import *
 import time
 
-command = "&+!;0 "
+command = "&+!&?;0: "
 skip_wait = False
 preset = 0
 if __name__ == "__main__":
